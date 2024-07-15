@@ -10,8 +10,8 @@ Download socat-1.8.0.0.tar.gz and apply patch:
 curl -O http://www.dest-unreach.org/socat/download/socat-1.8.0.0.tar.gz
 tar xvf socat-1.8.0.0.tar.gz
 cd socat-1.8.0.0
-patch -p1 < socat-1.8.0.0.patch
-autreconf -fvi
+patch -p1 < ../socat-1.8.0.0.patch
+autoreconf -fvi
 ./configure --with-wolfssl=/usr/local
 make
 ```
